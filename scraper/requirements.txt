@@ -1,0 +1,6 @@
+selenium
+pdfplumber
+beautifulsoup4
+requests
+python-dotenv
+supabase-py 
