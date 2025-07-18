@@ -1,9 +1,10 @@
 [build]
-  command = "npm run build --workspaces"
-  publish = "frontend/dist"
+  base    = "."
+  command = "npm run build"
+  publish = "dist"
 
 [functions]
   directory = "netlify/functions"
 
 [functions."scrape-rates"]
-  schedule = "10 4 * * 0-4" # 10:10 AM Dhaka, Sun-Thu (UTC offset +6) 
+  schedule = "10 4 * * 0-4" # 10:10 AM Dhaka, Sun-Thu (UTC offset +6)
